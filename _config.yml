@@ -1,8 +1,4 @@
 name: NEO를 꿈꾸며
-permalink: /post/:title
-highlighter: rough
-markdown: kramdown
-kramdown:
-    input: GFM
-
+paginate: 10
+paginate_path: "?page=:num"
 theme: jekyll-theme-architect
