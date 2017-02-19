@@ -1,4 +1,0 @@
-name: NEO를 꿈꾸며
-paginate: 10
-paginate_path: "?page=:num"
-theme: jekyll-theme-architect
