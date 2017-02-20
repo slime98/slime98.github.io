@@ -1,5 +1,16 @@
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/syntax.css">
-</head>
+<!doctype html>
+<html>
+    {% include head.html %}
+    <body>
+        <main>
+            {% include header.html %}
+            {% if layout == "default" %}
+                {{ content }}
+            {% else %}
+                {% include section/index.html content="{{ layout }}" %}
+            {% endif %}
+            {% include sidebar.html %}
+            {% include footer.html %}
+        </main>
+    </body>
+</html>
