@@ -3,11 +3,15 @@ layout: default
 title: NEO를 꿈꾸며
 ---
 
-<h1>Blog Posts</h1>
-<ol>
-    <!--{% for post in site.posts %}
-        <li>
-            <span>{{ post.date|date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </li>
-    {% endfor %}-->
-</ol>
+<section>
+    {% if layout == "default" %}
+        <h1>Blog Posts</h1>
+        <ol>
+            <!--{% for post in site.posts %}
+                <li>
+                    <span>{{ post.date|date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </li>
+            {% endfor %}-->
+        </ol>
+    {% endif %}
+</section>
