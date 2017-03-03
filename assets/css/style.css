@@ -31,8 +31,6 @@ body, div, main, aside, article, header, section, nav, footer{
     padding: 40px;
     border: 2px black solid;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
 }
 
 #my-content>article{
@@ -49,8 +47,9 @@ body, div, main, aside, article, header, section, nav, footer{
 }
 
 #my-content #my-paginator{
-    align-self: center;
+    box-sizing: border-box;
     display: flex;
+    justify-content: center;
 }
 
 #my-paginator>li{
