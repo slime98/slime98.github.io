@@ -48,7 +48,7 @@ body, div, main, aside, article, header, section, nav, footer{
     color: #00b51c;
 }
 
-#my-content>#my-pagenator{
+#my-content #my-pagenator{
     align-self: center;
     display: flex;
 }
