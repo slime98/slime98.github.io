@@ -18,6 +18,7 @@ body, div, main, aside, article, header, section, nav, footer{
 
 #my-sidebar{
     grid-area: sidebar;
+    align-self: flex-start;
     justify-self: flex-end;
     padding: 15px;
     background: white;
