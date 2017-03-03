@@ -15,12 +15,15 @@ body, div, main, aside, article, header, section, nav, footer{
     grid-area: header;
     height: 25em;
     display: flex;
-    align-content: center;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#my-navibar{
+    align-self: flex-end;
 }
 
 #my-navibar>ul{
-    align-self: flex-end;
     display: flex;
 }
 
