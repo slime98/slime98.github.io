@@ -14,6 +14,26 @@ body, div, main, aside, article, header, section, nav, footer{
 #my-header{
     grid-area: header;
     height: 25em;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#my-navibar>ul{
+    align-self: flex-end;
+    display: flex;
+}
+
+#my-navibar li{
+    display: block;
+    border: 1px lightgray solid;
+    background: white;
+}
+
+#my-navibar a{
+    display: block;
+    padding: 0.5em;
+    box-sizing: border-box;
 }
 
 #my-sidebar{
