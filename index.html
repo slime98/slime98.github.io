@@ -6,14 +6,14 @@ title: 메인 화면
 <section id="my-content">
     <article id="my-list">
         <h1>모든 포스트</h1>
-        <ol>
+        <ol id="my-list">
             {% for post in site.posts %}
                 <li>
                     <span>{{ post.date|date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 </li>
             {% endfor %}
         </ol>
-        <ol>
+        <ol id="my-paginator">
             <li>
                 {% if paginator.previous_page %}
                     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
